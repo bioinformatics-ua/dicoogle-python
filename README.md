@@ -11,6 +11,7 @@ dicoogle-python: dicoogle API client
 Resources
 ---------
 
+* www.dicoogle.com
 
 License
 -------
