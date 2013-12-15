@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 """
 How works Dicoogle Webservices in REST?
 
@@ -52,10 +51,7 @@ import requests  # urllib2 sucks badly, we depend on requests
 
 def search_freetext(query):
 	result = requests.get(ENDPOINT + "dim?q="+ query)
-	
-
 	o = xmltodict.parse(result.text)
-
 	return o
 
 def search_advanced(query):
@@ -69,6 +65,7 @@ def dump(sop_instance_uid):
 	return result.text	
 
 def download(sop_instance_uid, destination="temporary_file"):
+	# TODO 
 	pass
 
 def number_of_results(query):
