@@ -42,6 +42,14 @@ class Dicoogle:
 
         return r
 
+    def index(self, uri, provider=None):
+        url = self.ENDPOINT + "/management/tasks/index"
+        data = {"uri":uri}
+        if provider:
+            data["provider"] = provider
+        r = requests.post(url,data=data)
+        return r
+
     def search(self, query, provider, keyword=False):
         url = self.ENDPOINT + "/search"
         data = {"query": query, "provider": provider, "keyword": keyword}
