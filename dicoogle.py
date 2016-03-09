@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __title__ = 'dicoogle'
-__version__ = '2.0-dev'
+__version__ = '2.0'
 __author__ = 'Luís A. Bastião Silva, Tiago Marques Godinho'
 __license__ = 'GPL v3'
 __copyright__ = 'Copyright 2013, Luís Bastião, Universidade de Aveiro'
