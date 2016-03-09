@@ -37,7 +37,7 @@ class Dicoogle:
         data = {"query": query, "fields": fields, "providers": providers}
         r = requests.get(url, params=data, stream=True)
         if file:
-            file.write(r.content)
+            file.write(r.text)
             file.flush()
 
         return r
